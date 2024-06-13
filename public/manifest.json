@@ -1,0 +1,29 @@
+{
+	"short_name": "webpow",
+	"name": "webpow",
+	"description": "webpow, Created by WebPoW",
+	"icons": [
+		{
+			"src": "logo180.png",
+			"type": "image/png",
+			"sizes": "180x180"
+		},
+		{
+			"src": "logo512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "logo256.png",
+			"type": "image/png",
+			"sizes": "256x256",
+			"purpose": "any maskable"
+		}
+	],
+	"id": "/index.html",
+	"start_url": "/index.html",
+	"background_color": "#FFFFFF",
+	"theme_color": "#673AB7",
+	"display": "fullscreen",
+	"gcm_sender_id": "103953800507"
+}

@@ -1,0 +1,93 @@
+{
+	"indexes": [
+		{
+			"collectionGroup": "apps",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "credential.menu",
+					"arrayConfig": "CONTAINS"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "apps",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "credential.read",
+					"arrayConfig": "CONTAINS"
+				},
+				{
+					"fieldPath": "dad",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "groups",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "boss",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "groups",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "id",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "users",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "deleted",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		},
+		{
+			"collectionGroup": "users",
+			"queryScope": "COLLECTION",
+			"fields": [
+				{
+					"fieldPath": "group",
+					"order": "ASCENDING"
+				},
+				{
+					"fieldPath": "hash",
+					"order": "ASCENDING"
+				}
+			]
+		}
+	],
+	"fieldOverrides": []
+}

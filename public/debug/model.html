@@ -1,0 +1,56 @@
+<article class='w3-container' id='model'>
+	<h3 class='w3-container'>
+		Model
+	</h3>
+	<!--List-->
+	<table class='w3-table-all w3-hoverable w3-card'>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th class='w3-right'>
+					<button class='w3-btn w3-deep-orange w3-right w3-tiny w3-round w3-e' id='modelFilterBtn'>
+						<span class='w3-w'>Filter</span>
+						<span class='w3-y'>F</span>
+					</button>
+					<button class='w3-btn w3-green w3-right w3-tiny w3-round w3-e' id='modelNewBtn'>
+						<span class='w3-w'>New</span>
+						<span class='w3-y'>N</span>
+					</button>
+				</th>
+			</tr><tr>
+				<td class='w3-padding-0' colspan='4'>
+					<span class='w3-hide w3-center' id='modelFilter'>
+						<input class='w3-input' id='modelFilterName' placeholder='&#9655; Name &#9665;' type='text'>
+					</span>
+				</td>
+			</tr>
+		</thead>
+		<tbody id='modelList'>
+		</tbody>
+	</table>
+	
+	<!--Edit-->
+	<section class='w3-modal' id='modelEdit'>
+		<div class='w3-modal-content w3-round'>
+			<div class='w3-container'>
+				<button class='w3-btn w3-round w3-red w3-display-topright w3-tiny' id='modelEditClose'>
+					<b>&times;</b>
+				</button>
+				<form class='w3-container w3-padding-16' id='modelEditData'>
+					<fieldset class='w3-round w3-border-deep-purple'>
+						<legend class='w3-container w3-large w3-text-deep-purple w3-padding' ID='modelEditLabel'>Categoria</legend>
+						<label class='w3-text-blue'>Name</label>
+						<input class='w3-input' id='modelEditName' name='modelEditName' placeholder='name' type='text' required>
+						<p class='w3-center w3-hide w3-show' id='modelEditBtn'>
+							<button class='w3-btn w3-red w3-round' id='modelEditCancel' type='reset'>Cancel</button>
+							<button class='w3-btn w3-blue w3-round' id='modelEditSave'>Save</button>
+						</p>
+						<p class='w3-center w3-hide' id='modelEditLoad'>
+							<img src='load.gif' width='50'>
+						</p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</section>	
+</article>

@@ -1,0 +1,20 @@
+/*POW*/
+.w3-margin-0{margin:0px 0px 0px 0px!important}
+.w3-padding-0{padding:0px 0px 0px 0px!important}
+.w3-point{cursor:pointer}
+
+.w3-w{display:default!important}
+.w3-y{display:none!important}
+.w3-p{padding:5px!important}
+.w3-e{padding:2px!important;min-width:50px;margin-left:5px}
+@media only screen and (max-width:420px){
+	.w3-w{display:none!important}
+	.w3-y{display:inline-block!important}
+	.w3-e{max-width:20px;min-width:20px!important}
+}
+
+input:valid:focus{background-color:#ddffdd}
+input:invalid:focus{background-color:#ffdddd}
+
+.w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
