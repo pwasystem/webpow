@@ -6,9 +6,9 @@
 
 This project is a content manager designed to create a Progressive Web App development platform and provide a simple way to manage applications, groups and users.
 
-|||
-|-|-|
-| ![](https://webpow.web.app/screen.png) |Its development was designed to facilitate the creation of a structure that serves as a starting point for developing web applications using HTML and JavaScript without the need to develop an access control structure.<br><br>The project uses the Google Firebase structure and the Spark plan, which is free, so it is possible to develop a minimum viable product without having to invest in infrastructure.|
+![](public/image/webpow.webp)
+
+Its development was designed to facilitate the creation of a structure that serves as a starting point for developing web applications using HTML and JavaScript without the need to develop an access control structure.<br><br>The project uses the Google Firebase structure and the Spark plan, which is free, so it is possible to develop a minimum viable product without having to invest in infrastructure.|
 
 ## Why use?
 
@@ -39,6 +39,8 @@ To develop your applications you need knowledge of HTML and JavaScript, however 
 - Leave Google Analytics activated.
 - Select an account for Analytics and click create project.
 
+![](public/image/add_project.webp)
+
 2. After creating your project, you must create a web application, to do this click on the icon </> on the phrase "Add an app to get started".
 
 - On the next screen, fill in your application details and add Firebase Hosting to your application.<br>
@@ -46,14 +48,26 @@ To develop your applications you need knowledge of HTML and JavaScript, however 
 - Install the Firebase CLI on your computer, it will be useful for deploying your files.<br>
 - In step 4, just log in, the files will be sent later.
 
+![](public/image/add_web_app.webp)
+
 3. Now that the hosting is created, it is necessary to activate user authentication using email and password. To do this, access the Google Authentication configuration page (https://console.firebase.google.com/project/YOUR-PROJECT-NAME/authentication) and click "Get Started".
 
+![](public/image/enable_auth.webp)
+
 - Click on the "Email/Password" button.
-- Then activate Email/Password authentication and click save. 
+
+![](public/image/email_password.webp)
+  
+- Then activate Email/Password authentication and click save.
+
+![](public/image/enable_login.webp)
 
 4. All your project information and systems will be stored in a Firestore database, you must activate it at https://console.firebase.google.com/project/YOUR-PROJECT-NAME/firestore and click "Create Database".
 
 - Select the region where your database will be created and in the security rules preferences select the **"Start in test mode"** option and click Create.
+
+![](public/image/create_database.webp)
+
 
 <p align=center><b>Ready! The Google Firebase Environment is now ready to receive your application.</b></p>
 
@@ -63,9 +77,15 @@ Now that you have created the environment for WebpoW, it is time to create your 
 
 1. The first is to access your app settings in your Firebase project settings. This can be done by clicking on the gear icon and then on the "Project Settings" option.
 
+![](public/image/project_setting.webp)
+
 2. Find the "SDK setup and configuration" option for your web application at the bottom of the "General" page and check the "Config" option and copy the data to the clipboard.
 
-3. After copying the project settings, access the Mitosis tool of the system [WebpoW](https://webpow.web.app/#mitosis) available at: [https://webpow.web.app/#mitosis](https ://webpow.web.app/#mitosis)
+![](public/image/config.webp)
+
+3. After copying the project settings, access the Mitosis tool of the system [WebpoW](https://webpow.web.app/#mitosis) available at: https://webpow.web.app/#mitosis
+
+![](public/image/mitosis.webp)
 
 4. Fill in your project data:
 
@@ -87,6 +107,8 @@ Now that you have created the environment for WebpoW, it is time to create your 
 
 7. Close the warning box and click download and save your files to deploy. The files created have unique keys compatible only with your project, so keep these files well.
 
+![](public/image/notice.webp)
+
 8. After unzipping the files, deploy your project through the Firebase CLI using the command:
 
 - Firebase login: Login to the Firebase CLI
@@ -96,7 +118,71 @@ Now that you have created the environment for WebpoW, it is time to create your 
 
 ## How to use?
 
+Now that you have cloned a copy of the system, you need to learn how to use it. So let's go.
 
+### Accessing the system administration area
 
+1. Access the system interface via https://YOUR_APP_WEB_NAME.web.app.
+
+2. Log in using the username and password provided in the system mitosis process.
+
+3. Access the administration interface through the menu or at https://YOUR_APP_WEB_NAME.web.app/#admin
+
+![](public/image/screen.png)
+
+This is the main interface of the system, here the main features of WebpoW will be controlled.
+
+The resources are divided into 3 basic elements of a system:
+
+#### Groups
+
+This element is used to manage groups and subgroups of users who have permission to use or edit registered applications.
+
+By default, the following groups are registered:
+
+- Super user: System administrator
+- Common: represents internet users
+
+Through this option you can create groups as a business organization chart as it is possible to create a group within another group or move them wherever they are needed. Click on the name of the groups to access their content.
+
+Specifications of what each group can do can be found in the application administration.
+
+When creating a group you must provide:
+
+> **Boss:** The head of a given group.
+> 
+> **Name:** The name of the group
+
+#### Users
+
+Users are administrators or users of the system, they are stored in groups to facilitate system administration.
+
+You can create a specific group for your users, register them as "Super Users" or use the standard web user "Commom".
+
+When creating a new user you must provide:
+
+> **Group:** Select the group your user belongs to.
+>
+> **Name:** The user name for reference.
+>
+> **E-mail:** The e-mail used to access the system.
+>
+> **Password:** The account access password.
+
+#### Apps
+
+This is the main element of your system, the application manager, applications also function as folders to store other information or systems.
+
+When creating a new application you must provide:
+
+> **Dad:** This option is used to indicate whether your application is in a folder or in the Root of the project. You can move them as you wish and assemble the most suitable structure for your application.
+>
+> **Name:** The name of your application, note that the name must be unique for each registered application and it will automatically create an access hash.
+> 
+> **HTML:** Paste your HTML code into this field to create the layout of your application.
+> 
+> **Script:** Here you must create your javascript script, it will be run on the client and not on the server.
+> 
+> **Credentials:** This is where you define which group will access the app, by default your user will be added with read, write and display permissions in the menu. Apps will only be accessed by internet visitors if the "Common" group is added for reading.
 
 
