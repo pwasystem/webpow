@@ -23,3 +23,7 @@ input:invalid:focus{background-color:#ffdddd}
 	max-width:1000px;
 	width:100%;
 }
+
+.w3-bold{
+	font-weight:bold;
+}

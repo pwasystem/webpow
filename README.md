@@ -1,7 +1,5 @@
 # WebpoW 
 
-## Documentation Under Construction
-
 ## Overview
 
 This project is a content manager designed to create a Progressive Web App development platform and provide a simple way to manage applications, groups and users.
@@ -126,9 +124,11 @@ Now that you have cloned a copy of the system, you need to learn how to use it. 
 
 2. Log in using the username and password provided in the system mitosis process.
 
+![](public/image/login.webp)
+
 3. Access the administration interface through the menu or at https://YOUR_APP_WEB_NAME.web.app/#admin
 
-![](public/image/screen.png)
+![](public/image/admin.webp)
 
 This is the main interface of the system, here the main features of WebpoW will be controlled.
 
@@ -137,6 +137,8 @@ The resources are divided into 3 basic elements of a system:
 #### Groups
 
 This element is used to manage groups and subgroups of users who have permission to use or edit registered applications.
+
+![](public/image/groups.webp)
 
 By default, the following groups are registered:
 
@@ -149,6 +151,8 @@ Specifications of what each group can do can be found in the application adminis
 
 When creating a group you must provide:
 
+![](public/image/group_new.webp)
+
 > **Boss:** The head of a given group.
 > 
 > **Name:** The name of the group
@@ -157,9 +161,13 @@ When creating a group you must provide:
 
 Users are administrators or users of the system, they are stored in groups to facilitate system administration.
 
+![](public/image/users.webp)
+
 You can create a specific group for your users, register them as "Super Users" or use the standard web user "Commom".
 
 When creating a new user you must provide:
+
+![](public/image/user_new.webp)
 
 > **Group:** Select the group your user belongs to.
 >
@@ -173,6 +181,8 @@ When creating a new user you must provide:
 
 This is the main element of your system, the application manager, applications also function as folders to store other information or systems.
 
+![](public/image/apps.webp)
+
 When creating a new application you must provide:
 
 > **Dad:** This option is used to indicate whether your application is in a folder or in the Root of the project. You can move them as you wish and assemble the most suitable structure for your application.
@@ -185,4 +195,4 @@ When creating a new application you must provide:
 > 
 > **Credentials:** This is where you define which group will access the app, by default your user will be added with read, write and display permissions in the menu. Apps will only be accessed by internet visitors if the "Common" group is added for reading.
 
-
+![](public/image/app_new.webp)

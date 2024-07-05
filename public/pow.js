@@ -3,7 +3,7 @@
 firebase.initializeApp(firebaseConfig);
 var Auth=firebase.auth();
 var Firestore=firebase.firestore();
-Firestore.enablePersistence();
+//Firestore.enablePersistence();
 firebase.analytics();
 
 var user=null;
