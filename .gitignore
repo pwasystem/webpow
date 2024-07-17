@@ -1,4 +1,11 @@
 .firebase
 firestore.rules
 WebPow.zip
-public/debug
+public/debug/documentation.html
+public/debug/documentation.js
+public/debug/get-started.html
+public/debug/get-started.js
+public/debug/help.html
+public/debug/help.js
+public/debug/pages.html
+public/debug/pages.js

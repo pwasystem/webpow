@@ -1,0 +1,28 @@
+<article class='w3-container' id='kiai'>
+	<section class='w3-panel' id='kiaiForm'>
+		<form method='post' action='http://127.0.0.1:5001/webpow/us-central1/kiai' onsubmit='return kiai(this)' class='w3-panel w3-card w3-padding-16'>
+		<fieldset>
+			<legend class='w3-text-deep-purple w3-xlarge w3-border-color-deep-purple'> Create your site </legend>
+				<p>
+					<input name='kiaiTitle' id='kiaiTitle' class='w3-input' value="Volta das férias">
+					<label class='w3-opacity' for='kiaiTitle'>Title</label>
+				</p>
+				<p>
+					<textarea name='kiaiDescription' id='kiaiDescription' class='w3-input'>Crie um artigo sobre a volta das férias
+use a cor vermelha</textarea>					
+					<label class='w3-opacity'  for='kiaiDescription'>Description</label>
+				</p>
+				<p class='w3-center'>
+					<button class='w3-button w3-deep-purple w3-round' id='jigPost'> Create </button>
+				</p>
+			</fieldset>
+		</form>
+	</section>			
+	<section class='w3-panel' id='kiaiResponse'>
+		<div class='w3-card  w3-panel w3-padding-16' id='kiaiView' style='display:none'></div>
+		<div class='w3-card  w3-panel w3-padding-16' id='kiaiLoad' style='display:none'>
+			<h3 class='w3-center w3-text-deep-purple'>Await a moment, create content!</h3>
+			<p class='w3-center'><img src='load.gif'></p>
+		</div>
+	</section>
+</article>
