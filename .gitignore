@@ -1,5 +1,6 @@
 .firebase
 firestore.rules
+firestore.database.json
 WebPow.zip
 public/debug/documentation.html
 public/debug/documentation.js
