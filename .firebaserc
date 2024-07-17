@@ -1,5 +1,10 @@
 {
-	"projects":{
-		"default":"webpow"
-	}
+  "projects": {
+    "default": "webpow"
+  },
+  "dataconnectEmulatorConfig": {
+    "postgres": {
+      "localConnectionString": "postgresql://localhost:5432?sslmode=disable"
+    }
+  }
 }

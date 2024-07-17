@@ -183,3 +183,10 @@ function post(form,callback){
 	_(callback,data);
 	return false;
 }
+
+//Form to JSON
+function getData(e){
+	let data = '{';
+	for(let i = 0 ; i < e.length ; i++)if(e[i].id) data+='"'+e[i].id+'":"'+e[i].value+'",';
+	return JSON.parse(data.slice(0,-1)+'}');
+}
