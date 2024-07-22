@@ -37,6 +37,9 @@ exports.kiai = onRequest(async  (req, res) => {
 	let message = `Use templates and create a content to page ${data.kiaiTitle}, ${data.kiaiDescription}.\nReturn only a JSON variable.`;
 	let code = await run(message);
 	data.kiaiHash = hash(data.kiaiTitle)
+	
+	logger.info(code, {structuredData: true});
+	
 	let json = JSON.parse(code.replace("```json",'').replace("```",''));
 	
 	//Create HTML and JS to deploy if localhost

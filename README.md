@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a content manager designed to create a Progressive Web App development platform and provide a simple way to manage applications, groups and users.
+This project is a content management system designed to create a Progressive Web App development platform and provide a simple way to manage applications, groups and users. WebpoW also enables the creation of content using artificial intelligence to reduce project development time.
 
 ![](public/image/webpow.webp)
 
@@ -94,6 +94,7 @@ Now that you have created the environment for WebpoW, it is time to create your 
 - Email: Will be used to log in to the system as an administrator after activation.
 - Password: password for the email above. Write down the data.
 - Connection String: Paste your project settings here, the ones you copied initially.
+- Gemini Key: Generate your key for Kiai here at https://aistudio.google.com/app/apikey.
 
 5. Now you need to adjust the layout details of your new system, to do this click on the images to replace them and change the theme and background colors of your system.
 
@@ -196,3 +197,18 @@ When creating a new application you must provide:
 > **Credentials:** This is where you define which group will access the app, by default your user will be added with read, write and display permissions in the menu. Apps will only be accessed by internet visitors if the "Common" group is added for reading.
 
 ![](public/image/app_new.webp)
+
+#### Kiai
+
+This new WebpoW element was developed to create page content just by inputting texts. To do this, you need to have a key for the Google Gemini API, it can be purchased here:
+
+> https://aistudio.google.com/app/apikey
+
+Your key can be configured in the .env document.
+
+Kiai was designed to run on the Firebase emulator, so after configuring your testing environment use the command:
+
+> Firebase emulators:start
+
+When your server is active, access the page http://127.0.0.1:5000/#kiai and have fun suggesting titles and descriptions of the pages that should be created.
+You can suggest available sessions in #templates with changes to colors, texts and content.

@@ -5,18 +5,17 @@ function kiai(f){
 	//Set variables
 	let form = new FormData(f);
 	let json = Object.fromEntries(form.entries());
-	let value = JSON.stringify(json)
-
+	json.kiaiDescription = json.kiaiDescription.replaceAll('\n','\\n');
+	let value = JSON.stringify(json);
 	//Set display on request
 	kiaiForm.style = 'display:none';
 	kiaiView.style = 'display:none';
-	kiaiLoad.style = 'display:block';
-	
+	kiaiLoad.style = 'display:block';	
 	//Post data
 	fetch(f.action,{
 		method : 'POST',
 		header : {'Content-Type': 'application/json; charset=UTF-8'},
-		body: value.replaceAll('\n','\\\\n'),
+		body: value,
 	}).then(response=>{
 		//receive fetch
 		return response.text();

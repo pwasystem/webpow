@@ -1,0 +1,135 @@
+<article class='w3-container' id='clone'>
+	<h3 class='w3-container'>Mitosis</h3>	
+	<section class='w3-container' id='cloneNew'>
+		<form class='w3-container w3-card' id='cloneData'>
+			<fieldset class='w3-round w3-border-deep-purple'>
+				<legend class='w3-container w3-large w3-text-deep-purple w3-padding'>Informations</legend>
+				<label for='cloneName' class='w3-text-deep-purple'>Project Name</label>
+				<input class='w3-input' id='cloneName' name='cloneName' placeholder='Project name' type='text' required>
+				<label for='cloneDescription' class='w3-text-deep-purple'>Project Description</label>
+				<input class='w3-input' id='cloneDescription' name='cloneDescription' placeholder='Project description' type='text' required>
+				<label for='cloneKeywords' class='w3-text-deep-purple'>Keywords</label>
+				<input class='w3-input' id='cloneKeywords' name='cloneKeywords' placeholder='Project keywords' type='text' required>
+				<label for='cloneAuthor' class='w3-text-deep-purple'>Author</label>
+				<input class='w3-input' id='cloneAuthor' name='cloneAuthor' placeholder='author name' type='text' required>
+				<label for='cloneEmail' class='w3-text-deep-purple'>E-mail</label>
+				<input class='w3-input' id='cloneEmail' name='cloneEmail' placeholder='email' type='text' required>
+				<label for='clonePassword' class='w3-text-deep-purple'>Password</label>
+				<input class='w3-input' id='clonePassword' name='clonePassword' placeholder='password' type='text' required>
+				<label for='cloneConnection' class='w3-text-deep-purple'>Connection String</label>
+				<textarea class='w3-input w3-tiny' id='cloneConnection' name='cloneConnection' rows='3' required></textarea>
+				<input class='w3-input' id='cloneGeminiKey' name='cloneGeminiKey' placeholder='Gemini key' type='text'>
+				<label for='cloneAuthor' class='w3-text-deep-purple'>Gemini key</label>
+				<legend class='w3-container w3-large w3-text-deep-purple w3-padding'>Layout</legend>
+				<div class='w3-row'>
+					<div class='w3-half w3-container w3-center'>
+						<label for='cloneLogoMain' class='w3-text-deep-purple'>Logo</label>
+						<br>
+						<input type='file' id='cloneLogoMain' class='w3-hide'>
+						<label for='cloneLogoMain'>
+							<canvas id='cloneLogoMainView' width='100%' height='60' class='w3-deep-purple'></canvas>
+						</label>
+					</div>
+					<div class='w3-half w3-container w3-center'>
+						<label class='w3-text-deep-purple' for='cloneTheme'>Theme color</label><br>
+						<select id='cloneTheme'>
+							<option class='w3-white' value='white'>White
+							<option class='w3-black' value='black'>Black
+							<option class='w3-red' value='red'>Red
+							<option class='w3-pink' value='pink'>Pink
+							<option class='w3-purple' value='purple'>Purple
+							<option class='w3-deep-purple' value='deep-purple' selected>Deep Purple
+							<option class='w3-indigo' value='indigo'>Indigo
+							<option class='w3-blue' value='blue'>Blue
+							<option class='w3-light-blue' value='light-blue'>Light Blue
+							<option class='w3-cyan' value='cyan'>Cyan
+							<option class='w3-aqua' value='aqua'>Aqua
+							<option class='w3-teal' value='teal'>Teal
+							<option class='w3-green' value='green'>Green
+							<option class='w3-light-green' value='light-green'>Light Green
+							<option class='w3-lime' value='lime'>Lime
+							<option class='w3-sand' value='sand'>Sand
+							<option class='w3-khaki' value='khaki'>Khaki
+							<option class='w3-yellow' value='yellow'>Yellow
+							<option class='w3-amber' value='amber'>Amber
+							<option class='w3-orange' value='orange'>Orange
+							<option class='w3-deep-orange' value='deep-orange'>Deep Orange
+							<option class='w3-blue-gray' value='deep-purple'>Blue Gray
+							<option class='w3-brown' value='brown'>Brown
+							<option class='w3-light-gray' value='light-gray'>Light Gray
+							<option class='w3-gray' value='gray'>Gray
+							<option class='w3-dark-gray' value='dark-gray'>Dark Gray
+							<option class='w3-pale-red' value='pale-red'>Pale Red
+							<option class='w3-pale-yellow' value='pale-yellow'>Pale Yellow
+							<option class='w3-pale-green' value='pale-green'>Pale Green
+							<option class='w3-pale-blue' value='pale-blue'>Pale-Blue
+						</select>
+						<br>
+						<label class='w3-text-deep-purple' for='cloneBackground'>Background</label><br>
+						<select id='cloneBackground'>
+							<option class='w3-white' value='white'>White
+							<option class='w3-black' value='black'>Black
+							<option class='w3-red' value='red'>Red
+							<option class='w3-pink' value='pink'>Pink
+							<option class='w3-purple' value='purple'>Purple
+							<option class='w3-deep-purple' value='deep-purple'>Deep Purple
+							<option class='w3-indigo' value='indigo'>Indigo
+							<option class='w3-blue' value='blue'>Blue
+							<option class='w3-light-blue' value='light-blue'>Light Blue
+							<option class='w3-cyan' value='cyan'>Cyan
+							<option class='w3-aqua' value='aqua'>Aqua
+							<option class='w3-teal' value='teal'>Teal
+							<option class='w3-green' value='green'>Green
+							<option class='w3-light-green' value='light-green'>Light Green
+							<option class='w3-lime' value='lime'>Lime
+							<option class='w3-sand' value='sand'>Sand
+							<option class='w3-khaki' value='khaki'>Khaki
+							<option class='w3-yellow' value='yellow'>Yellow
+							<option class='w3-amber' value='amber'>Amber
+							<option class='w3-orange' value='orange'>Orange
+							<option class='w3-deep-orange' value='deep-orange'>Deep Orange
+							<option class='w3-blue-gray' value='deep-purple'>Blue Gray
+							<option class='w3-brown' value='brown'>Brown
+							<option class='w3-light-gray' value='light-gray'>Light Gray
+							<option class='w3-gray' value='gray'>Gray
+							<option class='w3-dark-gray' value='dark-gray'>Dark Gray
+							<option class='w3-pale-red' value='pale-red'>Pale Red
+							<option class='w3-pale-yellow' value='pale-yellow'>Pale Yellow
+							<option class='w3-pale-green' value='pale-green'>Pale Green
+							<option class='w3-pale-blue' value='pale-blue'>Pale-Blue
+						</select>
+					</div>
+				</div>
+				<label for='cloneLogo' class='w3-text-deep-purple'>Manifest Logo</label><br>
+				<input type='file' id='cloneLogo' class='w3-hide'>
+				<label for='cloneLogo'>
+					<p align='center'>
+						<canvas id='cloneLogoView' width='200' height='200' style='border:1px solid #000000'></canvas>
+						<canvas id='cloneLogoMasc' width='200' height='200'></canvas>
+					</p>
+				</label>
+				<p class='w3-center w3-hide w3-show' id='cloneBtn'>
+					<button class='w3-btn w3-deep-purple w3-round' id='cloneStart' type='button'>Clone</button>
+				</p>
+				<p class='w3-center w3-hide' id='cloneLoad'>
+					<img src='load.gif' width='50'>
+				</p>
+			</fieldset>
+			<br>
+		</form>
+	</section>
+	
+	<section class='w3-container w3-hide' id='cloneDownload'>
+		<form class='w3-container w3-card' id='cloneEnd'>
+			<fieldset class='w3-round w3-border-deep-purple'>
+				<legend class='w3-container w3-large w3-text-deep-purple w3-padding'>Downloads</legend>				
+				<p class='w3-center'>
+					Click on the buttons and save the files on your computer, they will be used in the project's deployment.<br><br>
+					<button class='w3-btn w3-deep-purple w3-round' id='cloneBtnDownload' type='button'>Download</button>
+				</p>
+			</fieldset>
+			<br>
+		</form>
+	<section>
+		
+</article>

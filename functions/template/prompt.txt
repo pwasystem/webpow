@@ -8,5 +8,5 @@ If not specified, create models with random sessions.
 Put w3schools images as an example.
 Don't use Lorem ipsum, create real texts.
 Sessions must be divided by a "section" tag.
-If you use Cards, add the 'Cards Modal' model.
+If you use Cards, add the 'Cards Modal' model in HTML.
 Always return only one valid JSON variable with html and javascript like {"html": "sourceHTML","javascript":"sourceJavaScript"} to parse into JSON.
